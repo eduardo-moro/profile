@@ -1,19 +1,24 @@
 <template>
   <v-app id="app">
-    <main-header/>
+    <mobile-header v-if="$vuetify.breakpoint.mobile"/>
+    <main-header v-else/>
 
     <v-main>
       <router-view/>
     </v-main>
+
+    <main-footer />
   </v-app>
 </template>
 
 <script>
 
 import MainHeader from "@/components/MainHeader";
+import MobileHeader from "@/components/MobileHeader";
+import MainFooter from "@/components/MainFooter";
 export default {
   name: 'App',
-  components: {MainHeader},
+  components: {MainFooter, MobileHeader, MainHeader},
   data: () => ({
     //
   }),
