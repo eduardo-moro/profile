@@ -31,43 +31,43 @@ export default {
         {
           href: "/",
           title: "home",
-          icon: "mdi-home",
+          icon: "fa-home",
           isExternal: false
         },
         {
           href: "/about",
           title: "about",
-          icon: "mdi-question-mark",
+          icon: "fa-question",
           isExternal: false
         },
         {
           href: "https://www.linkedin.com/in/eduardomoro/?locale=en_US",
           title: "linkedin",
-          icon: "linkedin",
+          icon: "fa-linkedin",
           isExternal: true
         },
         {
           href: "https://api.whatsapp.com/send?phone=5541991855670&text=Hey%20Eduardo%2C%20I%20came%20by%20your%20github",
           title: "whatsapp",
-          icon: "whatsapp",
+          icon: "fa-whatsapp",
           isExternal: true
         },
         {
           href: "https://t.me/moroeduardo",
           title: "telegram",
-          icon: "telegram",
+          icon: "fa-telegram",
           isExternal: true
         },
         {
           href: "mailto:eduardomoro1127@gmail.com",
           title: "gmail",
-          icon: "gmail",
+          icon: "fa-envelope",
           isExternal: true
         },
         {
           href: "https://my.indeed.com/p/eduardohenriquep-hiffif5",
           title: "indeed",
-          icon: "indeed",
+          icon: "fa-info",
           isExternal: true
         },
       ]
