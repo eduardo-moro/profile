@@ -3,67 +3,35 @@
 
     <v-container
         fluid
-        class="white--text d-block text-md-center mt-12 font--monospace main--title"
+        class="white--text d-block mt-8 font--monospace main--title pb-0"
+        :class="$vuetify.breakpoint.mobile ? 'px-6':'text-center'"
     >
       <h1>Welcome, I'm Eduardo Moro</h1>
-    </v-container>
 
-    <v-container class="mt-16">
-      <v-timeline
-          clipped
+      <v-btn
+          color="black"
+          class="white--text mt-4 pb-0 mb-0"
+          outlined
+          target="_blank"
+          href="https://my.indeed.com/rdp/1cc218736026aab1/pdf"
       >
-        <v-timeline-item small color="black">
-          <template v-slot:opposite>
-            <span class="headline font-weight-bold white--text">
-              2019
-            </span>
-          </template>
-
-          <v-card class="black">
-            <v-card-title class="text-h5 white--text">
-              UFPR
-            </v-card-title>
-
-            <v-card-text class="font-weight-bold white--text">
-              Minnor degree in system analisis and development
-            </v-card-text>
-          </v-card>
-        </v-timeline-item>
-
-        <v-timeline-item small color="black">
-          <template v-slot:opposite>
-            <span class="headline font-weight-bold white--text">
-              2019
-            </span>
-          </template>
-
-          <v-card class="black ">
-            <v-card-title class="text-h5 white--text justify-end">
-              UFPR
-            </v-card-title>
-
-            <v-card-text class="font-weight-bold white--text text-end">
-              Minnor degree in system analisis and development
-            </v-card-text>
-          </v-card>
-        </v-timeline-item>
-      </v-timeline>
+        Download  my resume
+        <v-icon/>
+      </v-btn>
     </v-container>
 
-    <div
-        class="py-16 black"
-    >
-
-    </div>
+    <my-timeline/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 
+import MyTimeline from "@/components/MyTimeline";
+
 export default {
   name: 'HomeView',
-  components: {}
+  components: {MyTimeline},
 }
 </script>
 
@@ -74,13 +42,6 @@ export default {
 
 .main--title {
   filter: drop-shadow(0 3px 5px black);
-
-}
-
-.theme--light.v-timeline::before {
-  background: white;
-  border-radius: 10px !important;
-  opacity: 35%;
 }
 
 </style>
