@@ -13,7 +13,7 @@
           class="white--text mt-4 pb-0 mb-0"
           outlined
           target="_blank"
-          href="https://my.indeed.com/rdp/1cc218736026aab1/pdf"
+          href="/CV - EN - Eduardo Moro.docx"
       >
         Download  my resume
         <v-icon/>
