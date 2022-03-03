@@ -1,7 +1,6 @@
 <template>
   <v-app id="app">
-    <mobile-header v-if="$vuetify.breakpoint.mobile"/>
-    <main-header v-else/>
+    <main-header/>
 
     <v-main>
       <router-view/>
@@ -14,11 +13,10 @@
 <script>
 
 import MainHeader from "@/components/MainHeader";
-import MobileHeader from "@/components/MobileHeader";
 import MainFooter from "@/components/MainFooter";
 export default {
   name: 'App',
-  components: {MainFooter, MobileHeader, MainHeader},
+  components: {MainFooter, MainHeader},
   data: () => ({
     //
   }),

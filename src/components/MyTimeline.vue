@@ -131,6 +131,15 @@ export default {
   opacity: 35%;
 }
 
+.theme--light.v-timeline:first-of-type::before {
+  height: 50% !important;
+  margin-top: 59px;
+}
+
+.theme--light.v-timeline:last-of-type::before {
+  height: 50% !important;
+}
+
 li {
   padding-bottom: 0;
 }
