@@ -29,7 +29,7 @@
             class="white--text mt-8 pb-0 mb-0"
             outlined
             target="_blank"
-            href="/CV - EN - Eduardo Moro.docx"
+            href="/Eduardo Moro CV (DEV II).pdf"
         >
           Download my resume
           <v-icon/>
