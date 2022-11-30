@@ -16,12 +16,12 @@
             </span>
         </template>
 
-        <v-card class="black">
-          <v-card-title class="title pb-4 white--text">
+          <v-card style="background: #0F0B19; box-shadow:none;">
+          <v-card-title class="title pb-4" style="color: #CE732A">
             {{ event.title }}
           </v-card-title>
 
-          <v-card-subtitle class="subtitle-2 pb-1 white--text">
+          <v-card-subtitle class="subtitle-2 pb-1" style="color: #2f6f6f">
             <p v-html=" event.subtitle "/>
           </v-card-subtitle>
 
@@ -48,8 +48,8 @@ export default {
           title: "UFPR",
           subtitle: "Minor degree - System analysis and development",
           description:
-              "<li>Here I learned the fundaments of programming logic, computer architecture, web topology and lots of soft skills </li>" +
-              "<li>Also I learned Pascal, C, assembly, PHP, HTML, CSS, and a bit of react and react native. </li>"
+              "<li>Learned the fundaments of programming logic, computer architecture, web topology and lots of soft skills </li>" +
+              "<li>Learned Pascal, C, assembly, PHP, HTML, CSS, and a bit of react and react native. </li>"
         },
         {
           month: "july",
@@ -84,18 +84,18 @@ export default {
         },
         {
           month: "april",
-          title: "Confidential",
+          title: "Keiken",
           subtitle: "Freelance fullstack developer",
           description:
-              "<li>I created a Golang backend with Gin and ElasticSearch used by over 10k users</li>" +
-              "<li>My platform consults 6 diferent public APIs to validate brazilian medical documents</li>" +
+              "<li>Created a Golang backend with Gin and ElasticSearch</li>" +
+              "<li>The created platform consults 6 diferent public APIs to validate brazilian medical documents</li>" +
               "<li>Created react native template pages using navigator 4 and axios</li>" +
               "<li>Created react template pages</li>"
         },
         {
           month: "july",
           title: "Ecritel",
-          subtitle: "Frontend mid developer",
+          subtitle: "Freelance frontend developer",
           description:
               "<li>Developed vue template pages using nuxt and vue 3</li>" +
               "<li>Created HTML Template creation used on magento application</li>" +
@@ -108,11 +108,24 @@ export default {
           title: "Mavtek",
           subtitle: "Fullstack mid developer",
           description:
-              "<li>I solved multiple tasks related to live streaming pages used by over +3m active members and +89k models</li>" +
+              "<li>Solved multiple tasks related to live streaming pages used by over +3m active members and +89k models</li>" +
               "<li>Improved multiple soft skills such as communication</li>" +
               "<li>Full remote job, with all the comunication done in english</li>" +
               "<li>Refactored complex legacy code for US tax forms</li>" +
               "<li>Monitored system performance and logs</li>"
+        },
+        {
+          month: "june",
+          title: "Quadritech",
+          subtitle: "Fullstack mid developer",
+          description:
+            "<li>Development of embedded systems with micropython on several chips based on RISC-v</li>" +
+            "<li>Development of neural networks aimed at real-time image analysis</li>" + 
+            "<li>Development of .net applications for windows with reading, validation, registration, and search of digital biometrics for government agencies</li>"+
+            "<li>Development of Django + MySQL APIs</li>" +
+            "<li>Test Driven Development (TDD)</li>" +
+            "<li>Development of \"scalable\" and \"assistive\" systems</li>" +
+            "<li>Creating Docker containers, deploying and monitoring applications on AWS</li>"
         },
         {
           year: 2022
@@ -142,6 +155,10 @@ export default {
 
 li {
   padding-bottom: 0;
+}
+
+.v-card:not(.v-card--flat)::after {
+  display: none;
 }
 
 </style>

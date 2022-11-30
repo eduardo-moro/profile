@@ -51,16 +51,10 @@ export default {
           isExternal: false
         },
         {
-          href: "/about",
-          title: "about",
-          icon: "fa-question",
-          isExternal: false
-        },
-        {
           href: "https://github.com/eduardo-moro",
           title: "github",
           icon: "fa-github",
-          isExternal: false
+          isExternal: true
         },
         {
           href: "https://www.linkedin.com/in/eduardomoro/?locale=en_US",

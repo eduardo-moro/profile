@@ -25,9 +25,8 @@
         <h4>SDA student on UFPR</h4>
 
         <v-btn
-            color="black"
-            class="white--text mt-8 pb-0 mb-0"
-            outlined
+            color="#F7B624"
+            class="mt-8 pb-0 mb-0"
             target="_blank"
             href="/Eduardo Moro CV (DEV II).pdf"
         >
@@ -42,7 +41,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 
 import MyTimeline from "@/components/MyTimeline";
 
