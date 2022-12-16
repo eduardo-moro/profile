@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
       app
-      color="#0000"
+      color="#0F0B19"
       dark
       elevation="0"
       class="gradient"
