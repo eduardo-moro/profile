@@ -28,7 +28,7 @@
             color="#F7B624"
             class="mt-8 pb-0 mb-0"
             target="_blank"
-            href="/Eduardo Moro CV (DEV II).pdf"
+            href="/Eduardo Moro Backend Mid Level Developerpdf.pdf"
         >
           Download my resume
           <v-icon/>
